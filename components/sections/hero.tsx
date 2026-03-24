@@ -16,18 +16,13 @@ export function HeroSection() {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-dark-bg">
-      {/* Animated background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-neon-green/5 via-transparent to-neon-green/10">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <FadeInWhenVisible
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <FadeInWhenVisible>
             <FadeInWhenVisible
               className="text-neon-green font-medium tracking-wide uppercase text-sm mb-4 text-neon-glow"
               delay={0.2}
@@ -102,7 +97,6 @@ export function HeroSection() {
         </div>
       </div>
       
-      {/* Scroll indicator */}
       <FadeInWhenVisible
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         delay={1.2}

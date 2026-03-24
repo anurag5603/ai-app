@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Transition } from 'framer-motion';
 import { Navbar } from '@/components/navbar';
 import { HeroSection } from '@/components/sections/hero';
 import { AboutSection } from '@/components/sections/about';
@@ -17,7 +17,7 @@ const pageVariants = {
   out: { opacity: 0 }
 };
 
-const pageTransition = {
+const pageTransition: Transition = {
   type: 'tween',
   ease: 'anticipate',
   duration: 0.5
